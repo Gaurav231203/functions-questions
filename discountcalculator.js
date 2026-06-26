@@ -9,7 +9,5 @@ function discountcalc(discount ){
 
 }
 const finaldiscount = discountcalc(10);
-console.log(finaldiscount(1000));
-//Discount Amount: 100
-//990
-//PS C:\Users\bisht\OneDrive\Desktop\functionqns> 
+
+ console.log(finaldiscount(10000));
