@@ -6,20 +6,26 @@ account.checkBalance();*/
 // isami ek enitial bakance hoga jissmai hume change krna hai deposit ,widraw and remaining balance
 
 
-function bankaccount(initalbalanece){
+function bankAccount(initalbalanece){
 let balance = initalbalanece;
  return {
     deposit: function(account){
-        deposit += account;
+        balance += account;
+            console.log(balance);
     },
     withdraw: function(account){
-        withdraw-=account ;
+        balance -=account ;
+            console.log(balance);
     },
     avaliable:function(account){
-        console.log(account());
+        console.log(balance);
 
     } 
 
  }
 
 }
+let account = bankAccount(1000);
+account.deposit(500);
+account.withdraw(1500);
+account.avaliable();
