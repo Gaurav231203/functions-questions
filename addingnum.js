@@ -1,7 +1,9 @@
-function addNumber(number){
+function addnum(fixednum){
+     return function(addednum){
+        return fixednum + addednum;
 
-    return function(num){
-        return 
-    }
 
+     }
 }
+let addfive = addnum(5);
+console.log(addfive(50));
